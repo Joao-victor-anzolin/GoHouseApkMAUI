@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GoHouse.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GoHouse"
+    xmlns:pages="clr-namespace:GoHouse.Pages"
+    Shell.FlyoutBackgroundColor="#202020"
+    Shell.TitleColor="White"
+    
+    Shell.FlyoutBehavior="Flyout"
+    
+    Title="GoHouse">
+
+    <Shell.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="titulocor">#FFFFFF</Color>
+            <Style TargetType="FlyoutItem">
+                <Setter Property="Shell.BackgroundColor" Value="#202020" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+            </Style>
+
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem Title="Home" Icon="iconhome.png">
+        <ShellContent Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Usuário" Icon="iconuser.png">
+        <ShellContent Route="Perfil" ContentTemplate="{DataTemplate pages:UserPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Search" Icon="iconsearch.png">
+        <ShellContent Route="Sobre" ContentTemplate="{DataTemplate pages:SearchPage}" />
+    </FlyoutItem>
+
+</Shell>
+

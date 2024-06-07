@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoHouse.Pages.UserPage"
+             Title="UserPage"
+             BackgroundColor="#202020"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout Margin="15" Padding="15" Spacing="5">
+
+        <Image Source="logo.png" WidthRequest="100"/>
+
+        <Label
+            Text="User"
+            TextColor="White"
+            FontSize="Large"
+            FontFamily="Roboto"
+        />
+        
+        <Border></Border>
+
+        <Label
+            Text="Seja Bem Vindo!"
+            TextColor="White"
+            FontFamily="Roboto"
+            FontSize="Medium"            
+        />
+
+        <HorizontalStackLayout>
+            <VerticalStackLayout Margin="0, 00, 140, 0">
+                <Label
+                    Text="Nome:"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontFamily="Roboto"
+                    FontSize="Medium"
+                    TextDecorations="Underline"
+                    />
+                <Label
+                    Text="seu nome"
+                    TextColor="White"
+
+                    FontSize="Medium"
+                />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Label
+                    Text="Email:"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontFamily="Roboto"
+                    FontSize="Medium"
+                    TextDecorations="Underline"
+                    />
+                <Label
+                    Text="seu email"
+                    TextColor="White"
+
+                    FontSize="Medium"
+                />
+            </VerticalStackLayout>
+            
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <VerticalStackLayout Margin="0, 0, 110, 0">
+                <Label
+                    Text="Endereço:"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontFamily="Roboto"
+                    FontSize="Medium"
+                    TextDecorations="Underline"
+                    />
+                <Label
+                    Text="seu endereço"
+                    TextColor="White"
+
+                    FontSize="Medium"
+                />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Label
+                    Text="Número:"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontFamily="Roboto"
+                    FontSize="Medium"
+                    TextDecorations="Underline"
+                    />
+                <Label
+                    Text="seu número"
+                    TextColor="White"
+
+                    FontSize="Medium"
+                />
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

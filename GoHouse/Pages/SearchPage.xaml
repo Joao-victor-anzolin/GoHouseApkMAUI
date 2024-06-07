@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoHouse.Pages.SearchPage"
+             Title="SearchPage"
+             BackgroundColor="#202020">
+    <VerticalStackLayout Margin="15" Padding="15" Spacing="5">
+        <Grid Margin="0, 20, 0 ,20" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+
+            <Image 
+                HorizontalOptions="Center"
+                Margin="30, 0"
+                Grid.Column="2" 
+                Source="textlogo.png" 
+                WidthRequest="150" 
+                />
+
+
+        </Grid>
+        <Border Margin="0, 0 ,0, 20"></Border>
+
+        <Grid>
+            <HorizontalStackLayout>
+                <Frame WidthRequest="260" BorderColor="#555" Margin="1" Padding="1" CornerRadius="1">
+                    <Entry
+
+                        BackgroundColor="#202020"
+                    />
+                </Frame>
+
+                <Button 
+                    Margin="20, 0"
+                    BackgroundColor="Transparent"
+                    BorderColor="#555"
+                    BorderWidth="1"
+                    ImageSource="iconsearch.png">
+                    
+                </Button>
+            </HorizontalStackLayout>
+
+        </Grid>
+
+        <Border Margin="0, 20"></Border>
+        
+
+
+    </VerticalStackLayout>
+</ContentPage>

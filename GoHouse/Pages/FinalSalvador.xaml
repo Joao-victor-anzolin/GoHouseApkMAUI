@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoHouse.Pages.FinalSalvador"
+             Title="FinalSalvador"
+             BackgroundColor="#202020"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ScrollView>
+        <VerticalStackLayout Margin="15" Padding="15" Spacing="5">
+            <Grid Margin="0, 20, 0 ,20" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+
+                <Image 
+                    Margin="30,0"
+        Grid.Column="2" 
+        Source="textlogo.png" 
+        WidthRequest="150" 
+/>
+            </Grid>
+            <Border Margin="0, 0 ,0, 10"></Border>
+            <Label
+                Text="Finalize sua compra"
+                TextColor="White"
+                FontSize="Large"
+                FontFamily="Roboto"
+                FontAttributes="Bold"
+                />
+            <Border Margin="0, 10 ,0, 20"></Border>
+
+            <Grid BackgroundColor="Transparent">
+
+                <HorizontalStackLayout>
+
+                    <Image Source="House2.png" WidthRequest="80"/>
+                    <VerticalStackLayout>
+                        <Label
+                            Margin="10, 12, 0 ,0 "
+                            Text="Salvador, Lauro de Freitas"
+                            TextColor="White"
+                            FontSize="Subtitle"
+                            FontFamily="Roboto"
+                            FontAttributes="Bold"
+
+                        />
+                        <Label
+                           Margin="10, 0"
+                           Text="R$ 700.000,00"
+                           TextColor="White"
+                           FontSize="Subtitle"
+                           FontFamily="Roboto"
+                           FontAttributes="Bold"
+                       />
+
+                        <Label
+                           Margin="10, 0"
+                           Text="Mauro Ambito, 560"
+                           TextColor="White"
+                           FontSize="Subtitle"
+                           FontFamily="Roboto"
+                           FontAttributes="Bold"
+                       />
+
+                    </VerticalStackLayout>
+
+                </HorizontalStackLayout>
+            </Grid>
+
+            <HorizontalStackLayout >
+                <Button
+                Margin="0, 15"
+                x:Name="Salcompra"
+                Clicked="Salcompra_Clicked_1"
+                HorizontalOptions="Center"
+                Text="Comprar"
+                BackgroundColor="#FF004C"
+                WidthRequest="100"
+            />
+
+                <Button
+                Margin="10, 15"
+                x:Name="Salvolta"
+                Clicked="Salvolta_Clicked"
+                HorizontalOptions="Center"
+                Text="Voltar"
+                BackgroundColor="#969696"
+                WidthRequest="100"
+            />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoHouse.Pages.FinalFloripa"
+             Title="FinalFloripa"
+             BackgroundColor="#202020"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Margin="15" Padding="15" Spacing="5">
+            <Grid Margin="0, 20, 0 ,20" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+
+                <Image 
+                HorizontalOptions="Center"
+                Margin="30, 0"
+                Grid.Column="2" 
+                Source="textlogo.png" 
+                WidthRequest="150" 
+                />
+
+
+            </Grid>
+            <Border Margin="0, 0 ,0, 20"></Border>
+
+            <Grid BackgroundColor="Transparent">
+
+                <HorizontalStackLayout>
+
+                    <Image Source="House1.png" WidthRequest="80"/>
+                    <VerticalStackLayout>
+                        <Label
+                           Margin="10, 12, 0 ,0 "
+                           Text="Santa Catarina, Florianopolis"
+                           TextColor="White"
+                           FontSize="Subtitle"
+                           FontFamily="Roboto"
+                           FontAttributes="Bold"
+
+                       />
+                        <Label
+                          Margin="10, 0"
+                          Text="R$ 700.000,00"
+                          TextColor="White"
+                          FontSize="Subtitle"
+                          FontFamily="Roboto"
+                          FontAttributes="Bold"
+                      />
+
+                        <Label
+                          Margin="10, 0"
+                          Text="Adubaldo Cesar 560"
+                          TextColor="White"
+                          FontSize="Subtitle"
+                          FontFamily="Roboto"
+                          FontAttributes="Bold"
+                      />
+
+                    </VerticalStackLayout>
+
+
+
+
+                </HorizontalStackLayout>
+
+
+
+            </Grid>
+
+            <HorizontalStackLayout >
+                <Button
+                Margin="0, 15"
+                x:Name="Flocompra"
+                Clicked="Flocompra_Clicked"
+                HorizontalOptions="Center"
+                Text="Comprar"
+                BackgroundColor="#FF004C"
+                WidthRequest="100"
+            />
+
+                <Button
+                Margin="10, 15"
+                x:Name="Flovolta"
+                Clicked="Flovolta_Clicked"
+                HorizontalOptions="Center"
+                Text="Voltar"
+                BackgroundColor="#969696"
+                WidthRequest="100"
+            />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
